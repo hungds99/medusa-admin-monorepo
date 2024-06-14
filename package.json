@@ -1,0 +1,24 @@
+{
+  "name": "medusa-admin-monorepo",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "start": "turbo run start --parallel",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "turbo": "latest",
+    "typescript": "^5.4.5"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "yarn@4.3.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}
